@@ -1,0 +1,325 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url(./images/desktop/image-header.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.links ul {
+    display: flex;   
+}
+.links ul li{
+    padding: 15px;
+    list-style: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', sans-serif;
+}
+.nav .links ul li:nth-child(4) a{
+    background: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    color: black;
+    border-radius: 20px;
+}
+.nav .links ul li:nth-child(4) a:hover{
+    background: hsla(0, 0%, 100%, 0.37);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.headerContent{
+       text-align: center;
+}
+
+.headerContent h1{
+    color:  hsl(0, 0%, 100%);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+    margin: 20px 0 130px;
+    font-family: 'Fraunces', serif;
+}
+
+section .container .row-1{
+    height: 100vh;
+    display: flex;
+}
+section .container .col{
+    width: 50%;
+}
+section .container .col img{
+    width: 100%;
+    height: 100%;
+}
+
+/* second row */
+/* row 1 */
+section .container .row-1 .col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container .row-1 article h1{
+    font-size: 30px;
+       font-family: 'Fraunces', serif;
+        color: hsl(212, 27%, 19%);
+        margin-bottom: 1.5rem;
+}
+section .container .row-1 article p{
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 1.2rem;
+}
+section .container .row-1 article a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    
+}
+section .container .row-1 article a::before{
+    content: "";
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    width: 100%;
+    height: .7rem;
+    background: hsla(51, 100%, 49%, 0.404);
+    border-radius: .5rem;
+    transition: .35s;
+}
+section .container .row-1 article a:hover::before{
+    background: hsl(51, 100%, 49%);
+    
+}
+
+/*  row 2 */
+section .container .row-2{
+    height: 100vh;
+    display: flex;
+}
+section .container .row-2 .col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container .row-2 article h1{
+    font-size: 30px;
+       font-family: 'Fraunces', serif;
+        color: hsl(212, 27%, 19%);
+        margin-bottom: 1.5rem;
+}
+section .container .row-2 article p{
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 1.2rem;
+}
+section .container .row-2 article a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    
+}
+section .container .row-2 article a::before{
+    content: "";
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    width: 100%;
+    height: .7rem;
+    background: hsla(7, 100%, 49%, 0.404);
+    border-radius: .5rem;
+    transition: .35s;
+}
+section .container .row-2 article a:hover::before{
+    background: hsl(7, 99%, 70%);
+    
+}
+
+
+
+
+
+/* third row */
+/* Graphic Design */
+section .container .row-3{
+    height: 100vh;
+    display: flex;
+}
+
+section .container .row-3 .col-5{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;       
+}
+section .container .row-3 .col-5 article{
+    margin-top: 25rem;
+}
+section .container .row-3 .col-5 article h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: hsl(167, 40%, 24%);
+    margin-bottom: 1rem;
+    font-family: 'Fraunces', serif;
+}
+section .container .row-3 .col-5 article p{
+    font-size: .8rem;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Photograpy */
+    section .container .row-3 .col-6{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section .container .row-3 .col-6 article{
+    margin-top: 25rem;
+}
+section .container .row-3 .col-6 article h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 1rem;
+    font-family: 'Fraunces', serif;
+}
+section .container .row-3 .col-6 article p{
+    font-size: .8rem;
+    color: hsl(198, 62%, 26%);
+    font-family: 'Barlow', sans-serif;
+}
+
+
+/* Client section */
+section .client{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+      background: hsla(42, 92%, 90%, 0.192);
+    
+}
+section .client .top-text{
+    text-align: center;
+    margin: 5rem 0 3rem;
+}
+section .client .top-text h1{
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+section .client p{
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    font-family: 'Barlow', sans-serif;
+}
+section .client .bottom-content h3{
+    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', serif;
+}
+section .client .bottom-content .name-post p{    
+font-size: .8rem;
+font-family: 'Barlow', sans-serif;
+}
+
+section .client .bottom-content{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+section .client .cl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+section .client .cl img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-bottom: 3rem;
+}
+section .boxes{
+    display: flex;
+    /* flex-wrap: wrap; */    
+}
+section .boxes .box img{
+    width: 100%;
+    height: 100%;
+}
+/* footer starts here */
+section footer{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: hsl(168, 32%, 55%);
+} 
+section footer .logo{
+   color: hsl(167, 40%, 24%);
+    margin-bottom: 1.5rem;
+}
+section footer .link{
+    margin-bottom: 5rem;
+}
+section footer .link ul a{
+    padding: 1rem;
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    cursor: pointer;
+}
+section footer .link ul a:hover{
+    color:white;
+}
+section footer .social-icons img{
+    padding: 1rem;
+    cursor: pointer;
+}
+section footer .social-icons img:hover{
+    filter: brightness(0) invert(1);
+}
